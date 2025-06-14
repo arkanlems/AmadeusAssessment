@@ -15,8 +15,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/pokemons")
 public class PokemonController {
-    @Autowired
     private PokemonService service;
+    public PokemonController(PokemonService service) {
+        this.service = service;
+    }
 
     @Operation(summary = "Get all Pokémon", description = "Retrieve a list of all Pokémon in the database.")
     @ApiResponse(responseCode = "200", description = "List of Pokémon successfully retrieved")
