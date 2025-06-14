@@ -14,7 +14,7 @@ A CRUD API to manage Pokémon built with Spring Boot, PostgreSQL, Docker, Liquib
 
 1. `docker-compose up -d`
 2. Run the application via your IDE or `./mvnw spring-boot:run`
-3. Access API: `http://localhost:8080/api/v1/pokemons`
+3. Access API: `https://localhost:8080/api/v1/pokemons`
 4. Access Swagger: `https://localhost:8443/swagger-ui/index.html`
 
 ## Auth
@@ -25,3 +25,8 @@ This project is using basic authorization
 - password: secret
 
 if using postman please go to authorization tab on each petition and select Basic Auth and use the credentials above
+
+## Postman Collection
+
+in the direction `src/main/resources/postman_collection/Pokemon test.postman_collection.json` theres a json collection 
+that can be imported to postman and do the tests of the services

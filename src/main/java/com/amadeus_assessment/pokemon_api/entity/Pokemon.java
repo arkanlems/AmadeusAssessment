@@ -21,6 +21,17 @@ public class Pokemon {
 
     private boolean isLegendary;
 
+    public Pokemon(Long id, String name, String type, int level, boolean isLegendary) {
+        this.id = id;
+        this.name = name;
+        this.type = type;
+        this.level = level;
+        this.isLegendary = isLegendary;
+    }
+
+    public Pokemon() {
+    }
+
     public Long getId() {
         return id;
     }
