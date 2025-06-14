@@ -16,6 +16,15 @@ spring:
     user:
       name: admin
       password: secret
+logging:
+  level:
+    org.springframework.security: DEBUG
 
 server:
-  port: 8080
+  port: 8443
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: password
+    key-store-type: PKCS12
+    key-alias: pokemonapi
