@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: you
+      changes:
+        - insert:
+            tableName: pokemon
+            columns:
+              - column: { name: name, value: Pikachu }
+              - column: { name: type, value: Electric }
+              - column: { name: level, value: 12 }
+              - column: { name: is_legendary, valueBoolean: false }
+        - insert:
+            tableName: pokemon
+            columns:
+              - column: { name: name, value: Charizard }
+              - column: { name: type, value: Fire }
+              - column: { name: level, value: 60 }
+              - column: { name: is_legendary, valueBoolean: false }
+        - insert:
+            tableName: pokemon
+            columns:
+              - column: { name: name, value: Mew }
+              - column: { name: type, value: Physic }
+              - column: { name: level, value: 60 }
+              - column: { name: is_legendary, valueBoolean: true }
